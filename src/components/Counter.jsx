@@ -1,6 +1,7 @@
 import React from 'react'
 import { useSelector, useDispatch } from 'react-redux'
 import { decrement, increment } from '../store/counter/counterSlice'
+import { login } from '../store/auth/authThunk'
 
 export function Counter() {
   const count = useSelector((state) => state.counter.value)
@@ -11,7 +12,7 @@ export function Counter() {
       <div>
         <button
           aria-label="Increment value"
-          onClick={() => dispatch(increment())}
+          onClick={() => dispatch(login())}
         >
           Increment
         </button>

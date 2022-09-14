@@ -1,7 +1,7 @@
 import "./App.css";
 import React, { useState, useEffect } from "react";
-import { Counter } from "./components/Counter";
 import API from "./config/api";
+import { LoginForm } from './components/LoginForm';
 
 function App() {
   const [trainer, setTrainer] = useState();
@@ -15,7 +15,7 @@ function App() {
     getTrainerId();
   }, []);
 
-  return <><Counter /></>;
+  return <><LoginForm /></>;
 }
 
 export default App;

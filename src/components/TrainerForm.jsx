@@ -1,5 +1,3 @@
-// Mauricio Form
-
 import * as yup from "yup";
 import { useFormik } from "formik";
 import TextField from '@mui/material/TextField';
